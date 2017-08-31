@@ -363,10 +363,21 @@ body {
 	}
 
 
+// Custom tweaks
 .slides {
 	background-color: $textBackgroundColor;	
-	background-image: $backgroundImage;
-	background-position: left bottom; 
-	background-repeat: no-repeat;
 	padding: 20px 20px 20px 20px;
+}
+
+.reveal {
+	background-image: $logo;
+	background-size: $logoSize;
+	background-position: $logoPosition; 
+	background-repeat: no-repeat;
+
+}
+
+.reveal pre {
+	background-color: $codeBackgroundColor;
+    color: $codeColor;
 }

@@ -5,20 +5,21 @@
  * This theme is Copyright (C) 2012 Owen Versteeg, https://github.com/StereotypicalApps. It is MIT licensed.
  * reveal.js is Copyright (C) 2011-2012 Hakim El Hattab, http://hakim.se
  */
+@import url(https://fonts.googleapis.com/css?family=Contrail+One:400,700,400italic,700italic);
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,700,400italic,700italic);
 /*********************************************
  * GLOBAL STYLES
  *********************************************/
 body {
-  background: #fff;
-  background-color: #fff;
+  background: #2165B6;
+  background-color: #2165B6;
   text-align: left; }
 
 .reveal {
   font-family: "Roboto", sans-serif;
   font-size: 40px;
   font-weight: normal;
-  color: #2b2b2b; }
+  color: white; }
 
 ::selection {
   color: #fff;
@@ -45,8 +46,8 @@ body {
 .reveal h5,
 .reveal h6 {
   margin: 0 0 20px 0;
-  color: #2165B6;
-  font-family: "Roboto", sans-serif;
+  color: white;
+  font-family: "Contrail One", sans-serif;
   font-weight: normal;
   line-height: 1.2;
   letter-spacing: normal;
@@ -173,7 +174,7 @@ body {
   margin: auto;
   border-collapse: collapse;
   border-spacing: 0;
-  background-color: rgba(255, 255, 255, 0.5); }
+  background-color: rgba(255, 255, 255, 0); }
 
 .reveal table th {
   font-weight: bold; }
@@ -222,7 +223,7 @@ body {
   transition: color .15s ease; }
 
 .reveal a:hover {
-  color: #2165B6;
+  color: #E8830C;
   text-shadow: none;
   border: none; }
 
@@ -236,7 +237,7 @@ body {
 .reveal section img {
   margin: 15px 0px;
   background: rgba(255, 255, 255, 0.12);
-  border: 4px none #2b2b2b;
+  border: 4px none white;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.15); }
 
 .reveal section img.plain {
@@ -273,16 +274,16 @@ body {
   border-top-color: #E8830C; }
 
 .reveal .controls .navigate-left.enabled:hover {
-  border-right-color: #2165B6; }
+  border-right-color: #E8830C; }
 
 .reveal .controls .navigate-right.enabled:hover {
-  border-left-color: #2165B6; }
+  border-left-color: #E8830C; }
 
 .reveal .controls .navigate-up.enabled:hover {
-  border-bottom-color: #2165B6; }
+  border-bottom-color: #E8830C; }
 
 .reveal .controls .navigate-down.enabled:hover {
-  border-top-color: #2165B6; }
+  border-top-color: #E8830C; }
 
 /*********************************************
  * PROGRESS BAR
@@ -297,8 +298,24 @@ body {
   transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985); }
 
 .slides {
-  background-color: rgba(255, 255, 255, 0.5);
-  background-image: url("https://github.com/stephlocke/lazyCDN/blob/master/Slide%20Background%20Transparent.png?raw=true");
-  background-position: left bottom;
-  background-repeat: no-repeat;
+  background-color: rgba(255, 255, 255, 0);
   padding: 20px 20px 20px 20px; }
+
+.reveal {
+  background-image: url("https://itsalocke.com/img/LockeDataTextNew.svg");
+  background-size: 10% 10%;
+  background-position: top right;
+  background-repeat: no-repeat; }
+
+.reveal pre {
+  background-color: white;
+  color: black; }
+
+.quote {
+  background-image: url('data:image/svg+xml;utf8,<svg width="508" height="285.75001" xmlns="http://www.w3.org/2000/svg"> <g><title>background</title> <rect fill="none" id="canvas_background" height="402" width="582" y="-1" x="-1"/> </g> <g> <title>Layer 1</title> <g stroke="null" id="layer1">\a        <path stroke="null" fill="#ffffff" d="m42.33334,23.812499l0,168.42971l133.41428,0l-49.897087,69.69529l183.681114,-69.69529l140.135011,0l0,-168.42971l-407.333318,0z" id="rect1574"/> </g> </g> </svg>');
+  background-position: bottom left;
+  background-repeat: no-repeat;
+  background-size: contain; }
+
+.reveal .quote h1 {
+  color: #E8830C; }
